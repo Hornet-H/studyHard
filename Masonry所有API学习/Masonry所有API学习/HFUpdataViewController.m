@@ -31,6 +31,8 @@
         // 最大放大到整个view
         make.width.height.lessThanOrEqualTo(self.view);
     }];
+
+
 }
 - (void)updateViewConstraints {
     [self.growingButton mas_updateConstraints:^(MASConstraintMaker *make) {
@@ -47,8 +49,7 @@
 
 - (void)onGrowButtonTaped:(UIButton* )sender{
     self.scacle += 0.2;
-    
-    // 告诉self.view约束需要更新
+    /** 告诉self.view约束需要更新*/
     [self.view setNeedsUpdateConstraints];
     // 调用此方法告诉self.view检测是否需要更新约束，若需要则更新，下面添加动画效果才起作用
     [self.view updateConstraintsIfNeeded];
@@ -56,12 +57,11 @@
     [UIView animateWithDuration:0.3 animations:^{
         [self.view layoutIfNeeded];
     }];
-
 }
 - (UIButton *)growingButton{
     if (!_growingButton) {
         _growingButton = [UIButton buttonWithType:UIButtonTypeSystem];
-        [_growingButton setTitle:@"点我放大" forState:UIControlStateNormal];
+        [_growingButton setTitle:@"点击放大" forState:UIControlStateNormal];
         _growingButton.layer.borderColor = UIColor.greenColor.CGColor;
         _growingButton.layer.borderWidth = 3;
         [_growingButton addTarget:self action:@selector(onGrowButtonTaped:) forControlEvents:UIControlEventTouchUpInside];
