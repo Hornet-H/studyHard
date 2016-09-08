@@ -67,9 +67,7 @@
         make.left.mas_equalTo(padding);
         make.right.mas_equalTo(redView.mas_left).offset(-padding);
         make.bottom.mas_equalTo(blueView.mas_top).offset(-padding);
-        /** 使用数组的方式确定三个控件等高*/
         make.height.mas_equalTo(@[redView, blueView]);
-        // 红、绿这两个控件等高
         make.width.mas_equalTo(redView);
     }];
     
@@ -80,7 +78,6 @@
     }];
     
     [blueView mas_makeConstraints:^(MASConstraintMaker *make) {
-        //    make.height.mas_equalTo(greenView);
         make.bottom.mas_equalTo(self.equalHeightcontainView).offset(-padding);
         make.left.mas_equalTo(padding);
         make.right.mas_equalTo(-padding);
@@ -90,7 +87,7 @@
 
 }
 
-
+/** 三个控件等宽*/
 - (void)configurationEqualWidthcontainView{
     UIView *greenView = UIView.new;
     greenView.backgroundColor = randomColor;
