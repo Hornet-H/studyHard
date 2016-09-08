@@ -15,6 +15,8 @@
 		87FBB5221D810C9C0043418B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 87FBB5201D810C9C0043418B /* LaunchScreen.storyboard */; };
 		87FBB52D1D810C9D0043418B /* Masonry__API__Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 87FBB52C1D810C9D0043418B /* Masonry__API__Tests.m */; };
 		87FBB5381D810C9D0043418B /* Masonry__API__UITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 87FBB5371D810C9D0043418B /* Masonry__API__UITests.m */; };
+		87FBB5471D812CF10043418B /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 87FBB5461D812CF10043418B /* BaseViewController.m */; };
+		87FBB5521D8134350043418B /* HFBasciViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 87FBB5511D8134350043418B /* HFBasciViewController.m */; };
 		97041914403967A0601308EB /* libPods-Masonry所有API学习Tests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 57916EFAE25A9F01A288CD82 /* libPods-Masonry所有API学习Tests.a */; };
 		B88836FA2A5A0AB5D5BB0009 /* libPods-Masonry所有API学习.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 152ACC29FD3A3BF30AC18174 /* libPods-Masonry所有API学习.a */; };
 		CDE4C775EF0AEBF227F5F195 /* libPods-Masonry所有API学习UITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A51B4DA17781973F89C3342B /* libPods-Masonry所有API学习UITests.a */; };
@@ -61,6 +63,11 @@
 		87FBB5331D810C9D0043418B /* Masonry所有API学习UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Masonry所有API学习UITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		87FBB5371D810C9D0043418B /* Masonry__API__UITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Masonry__API__UITests.m; sourceTree = "<group>"; };
 		87FBB5391D810C9D0043418B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		87FBB5451D812CF10043418B /* BaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseViewController.h; sourceTree = "<group>"; };
+		87FBB5461D812CF10043418B /* BaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseViewController.m; sourceTree = "<group>"; };
+		87FBB54A1D812E410043418B /* TargetPractice.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TargetPractice.pch; sourceTree = "<group>"; };
+		87FBB5501D8134350043418B /* HFBasciViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HFBasciViewController.h; sourceTree = "<group>"; };
+		87FBB5511D8134350043418B /* HFBasciViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HFBasciViewController.m; sourceTree = "<group>"; };
 		A51B4DA17781973F89C3342B /* libPods-Masonry所有API学习UITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Masonry所有API学习UITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E85CAD9832240AFD77DDE394 /* Pods-Masonry所有API学习UITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Masonry所有API学习UITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Masonry所有API学习UITests/Pods-Masonry所有API学习UITests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -131,14 +138,14 @@
 		87FBB5111D810C9C0043418B /* Masonry所有API学习 */ = {
 			isa = PBXGroup;
 			children = (
+				87FBB54F1D8133E20043418B /* Classes */,
+				87FBB54B1D812F7A0043418B /* Base */,
+				87FBB5491D812DE50043418B /* Comman */,
+				87FBB5481D812DB20043418B /* Other */,
 				87FBB5151D810C9C0043418B /* AppDelegate.h */,
 				87FBB5161D810C9C0043418B /* AppDelegate.m */,
 				87FBB5181D810C9C0043418B /* ViewController.h */,
 				87FBB5191D810C9C0043418B /* ViewController.m */,
-				87FBB51B1D810C9C0043418B /* Main.storyboard */,
-				87FBB51E1D810C9C0043418B /* Assets.xcassets */,
-				87FBB5201D810C9C0043418B /* LaunchScreen.storyboard */,
-				87FBB5231D810C9C0043418B /* Info.plist */,
 				87FBB5121D810C9C0043418B /* Supporting Files */,
 			);
 			path = "Masonry所有API学习";
@@ -168,6 +175,43 @@
 				87FBB5391D810C9D0043418B /* Info.plist */,
 			);
 			path = "Masonry所有API学习UITests";
+			sourceTree = "<group>";
+		};
+		87FBB5481D812DB20043418B /* Other */ = {
+			isa = PBXGroup;
+			children = (
+				87FBB51B1D810C9C0043418B /* Main.storyboard */,
+				87FBB51E1D810C9C0043418B /* Assets.xcassets */,
+				87FBB5201D810C9C0043418B /* LaunchScreen.storyboard */,
+				87FBB5231D810C9C0043418B /* Info.plist */,
+			);
+			name = Other;
+			sourceTree = "<group>";
+		};
+		87FBB5491D812DE50043418B /* Comman */ = {
+			isa = PBXGroup;
+			children = (
+				87FBB54A1D812E410043418B /* TargetPractice.pch */,
+			);
+			name = Comman;
+			sourceTree = "<group>";
+		};
+		87FBB54B1D812F7A0043418B /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				87FBB5451D812CF10043418B /* BaseViewController.h */,
+				87FBB5461D812CF10043418B /* BaseViewController.m */,
+			);
+			name = Base;
+			sourceTree = "<group>";
+		};
+		87FBB54F1D8133E20043418B /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				87FBB5501D8134350043418B /* HFBasciViewController.h */,
+				87FBB5511D8134350043418B /* HFBasciViewController.m */,
+			);
+			name = Classes;
 			sourceTree = "<group>";
 		};
 		8894F788B9B7AE4446BBFF1C /* Frameworks */ = {
@@ -250,6 +294,7 @@
 		87FBB5071D810C9C0043418B /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = HF;
 				LastUpgradeCheck = 0720;
 				ORGANIZATIONNAME = dahuangfeng;
 				TargetAttributes = {
@@ -442,6 +487,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				87FBB51A1D810C9C0043418B /* ViewController.m in Sources */,
+				87FBB5521D8134350043418B /* HFBasciViewController.m in Sources */,
+				87FBB5471D812CF10043418B /* BaseViewController.m in Sources */,
 				87FBB5171D810C9C0043418B /* AppDelegate.m in Sources */,
 				87FBB5141D810C9C0043418B /* main.m in Sources */,
 			);
@@ -585,6 +632,7 @@
 			baseConfigurationReference = 218B4EFF938C279CEA7AEB95 /* Pods-Masonry所有API学习.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PREFIX_HEADER = "Masonry所有API学习/TargetPractice.pch";
 				INFOPLIST_FILE = "Masonry所有API学习/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.dahuangfeng.Masonry--API--";
@@ -597,6 +645,7 @@
 			baseConfigurationReference = 42868FDB9CFE28CCB757CE1F /* Pods-Masonry所有API学习.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PREFIX_HEADER = "Masonry所有API学习/TargetPractice.pch";
 				INFOPLIST_FILE = "Masonry所有API学习/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.dahuangfeng.Masonry--API--";

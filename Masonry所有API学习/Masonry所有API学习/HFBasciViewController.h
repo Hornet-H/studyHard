@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  HFBasciViewController.h
 //  Masonry所有API学习
 //
 //  Created by 黄来峰 on 16/9/8.
@@ -8,8 +8,6 @@
 
 #import "BaseViewController.h"
 
-@interface ViewController : BaseViewController
-
+@interface HFBasciViewController : BaseViewController
 
 @end
-
