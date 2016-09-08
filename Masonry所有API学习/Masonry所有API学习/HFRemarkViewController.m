@@ -53,7 +53,6 @@
              make.height.equalTo(kScreenHeight);
         }else{
             make.height.equalTo(kScreenHeight/2 - 64);
-        
         }
     }];
 

@@ -11,6 +11,7 @@
 #import "HFUpdataViewController.h"
 #import "HFUseArrCreatLyaoutViewController.h"
 #import "HFRemarkViewController.h"
+#import "HFbasicAndUpdataViewController.h"
 
 @interface ViewController ()<UITableViewDataSource,UITableViewDelegate>
 
@@ -31,7 +32,7 @@
                            [[HFUpdataViewController alloc] initWithTitle:@"动画更新约束"],
                            [[HFUseArrCreatLyaoutViewController alloc] initWithTitle:@"数组形式设置约束"],
                            [[HFRemarkViewController alloc] initWithTitle:@"动画重新添加约束"],
-//                           [[TotalUpdateController alloc] initWithTitle:@"整体动画更新约束"],
+                           [[HFbasicAndUpdataViewController alloc] initWithTitle:@"整体动画更新约束"],
 //                           [[CompositeController alloc] initWithTitle:@"复合view循环约束"],
 //                           [[AspectFitController alloc] initWithTitle:@"约束百分比"],
 //                           [[BasicAnimatedController alloc] initWithTitle:@"基本动画"],
