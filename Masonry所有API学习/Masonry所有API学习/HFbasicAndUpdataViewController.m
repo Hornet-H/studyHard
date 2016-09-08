@@ -62,10 +62,10 @@
         }
         
         // 最大值为250
-        make.width.height.lessThanOrEqualTo(@250);
+        make.width.height.lessThanOrEqualTo(250);
         
         // 最小值为90
-        make.width.height.greaterThanOrEqualTo(@90);
+        make.width.height.greaterThanOrEqualTo(90);
     }];
     if (animate) {
         [self.view setNeedsUpdateConstraints];
