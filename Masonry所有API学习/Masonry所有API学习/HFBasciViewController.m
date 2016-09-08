@@ -110,7 +110,6 @@
     blueView.layer.borderWidth = 2;
     [self.equalWidthcontainView addSubview:blueView];
 
-    // 使这三个控件等高
     CGFloat padding = 10;
     [greenView mas_makeConstraints:^(MASConstraintMaker *make) {
         make.top.equalTo(self.equalWidthcontainView).offset(padding);
@@ -148,7 +147,6 @@
 - (UIView *)equalWidthcontainView{
     if (!_equalWidthcontainView) {
         _equalWidthcontainView = [[UIView alloc]init];
-//        _equalWidthcontainView.backgroundColor = UIColor.redColor;
     }
     return _equalWidthcontainView;
 }
