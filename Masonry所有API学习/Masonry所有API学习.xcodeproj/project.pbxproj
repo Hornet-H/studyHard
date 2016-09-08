@@ -19,6 +19,7 @@
 		87FBB5521D8134350043418B /* HFBasciViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 87FBB5511D8134350043418B /* HFBasciViewController.m */; };
 		87FBB5551D8148250043418B /* HFUpdataViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 87FBB5541D8148250043418B /* HFUpdataViewController.m */; };
 		87FBB5581D814E310043418B /* HFUseArrCreatLyaoutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 87FBB5571D814E310043418B /* HFUseArrCreatLyaoutViewController.m */; };
+		87FBB55B1D815E530043418B /* HFRemarkViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 87FBB55A1D815E530043418B /* HFRemarkViewController.m */; };
 		97041914403967A0601308EB /* libPods-Masonry所有API学习Tests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 57916EFAE25A9F01A288CD82 /* libPods-Masonry所有API学习Tests.a */; };
 		B88836FA2A5A0AB5D5BB0009 /* libPods-Masonry所有API学习.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 152ACC29FD3A3BF30AC18174 /* libPods-Masonry所有API学习.a */; };
 		CDE4C775EF0AEBF227F5F195 /* libPods-Masonry所有API学习UITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A51B4DA17781973F89C3342B /* libPods-Masonry所有API学习UITests.a */; };
@@ -74,6 +75,8 @@
 		87FBB5541D8148250043418B /* HFUpdataViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HFUpdataViewController.m; sourceTree = "<group>"; };
 		87FBB5561D814E310043418B /* HFUseArrCreatLyaoutViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HFUseArrCreatLyaoutViewController.h; sourceTree = "<group>"; };
 		87FBB5571D814E310043418B /* HFUseArrCreatLyaoutViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HFUseArrCreatLyaoutViewController.m; sourceTree = "<group>"; };
+		87FBB5591D815E530043418B /* HFRemarkViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HFRemarkViewController.h; sourceTree = "<group>"; };
+		87FBB55A1D815E530043418B /* HFRemarkViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HFRemarkViewController.m; sourceTree = "<group>"; };
 		A51B4DA17781973F89C3342B /* libPods-Masonry所有API学习UITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Masonry所有API学习UITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E85CAD9832240AFD77DDE394 /* Pods-Masonry所有API学习UITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Masonry所有API学习UITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Masonry所有API学习UITests/Pods-Masonry所有API学习UITests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -220,6 +223,8 @@
 				87FBB5541D8148250043418B /* HFUpdataViewController.m */,
 				87FBB5561D814E310043418B /* HFUseArrCreatLyaoutViewController.h */,
 				87FBB5571D814E310043418B /* HFUseArrCreatLyaoutViewController.m */,
+				87FBB5591D815E530043418B /* HFRemarkViewController.h */,
+				87FBB55A1D815E530043418B /* HFRemarkViewController.m */,
 			);
 			name = Classes;
 			sourceTree = "<group>";
@@ -498,6 +503,7 @@
 			files = (
 				87FBB5581D814E310043418B /* HFUseArrCreatLyaoutViewController.m in Sources */,
 				87FBB51A1D810C9C0043418B /* ViewController.m in Sources */,
+				87FBB55B1D815E530043418B /* HFRemarkViewController.m in Sources */,
 				87FBB5551D8148250043418B /* HFUpdataViewController.m in Sources */,
 				87FBB5521D8134350043418B /* HFBasciViewController.m in Sources */,
 				87FBB5471D812CF10043418B /* BaseViewController.m in Sources */,
