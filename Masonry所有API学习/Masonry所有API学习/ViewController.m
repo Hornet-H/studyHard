@@ -12,6 +12,7 @@
 #import "HFUseArrCreatLyaoutViewController.h"
 #import "HFRemarkViewController.h"
 #import "HFbasicAndUpdataViewController.h"
+#import "HFOverlapViewController.h"
 
 @interface ViewController ()<UITableViewDataSource,UITableViewDelegate>
 
@@ -33,7 +34,7 @@
                            [[HFUseArrCreatLyaoutViewController alloc] initWithTitle:@"数组形式设置约束"],
                            [[HFRemarkViewController alloc] initWithTitle:@"动画重新添加约束"],
                            [[HFbasicAndUpdataViewController alloc] initWithTitle:@"整体动画更新约束"],
-//                           [[CompositeController alloc] initWithTitle:@"复合view循环约束"],
+                           [[HFOverlapViewController alloc] initWithTitle:@"复合view循环约束"],
 //                           [[AspectFitController alloc] initWithTitle:@"约束百分比"],
 //                           [[BasicAnimatedController alloc] initWithTitle:@"基本动画"],
 //                           [[ScrollViewController alloc] initWithTitle:@"ScrollView布局"],
