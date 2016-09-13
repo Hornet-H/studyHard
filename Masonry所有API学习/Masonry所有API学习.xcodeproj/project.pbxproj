@@ -26,6 +26,9 @@
 		87FBB5671D8289430043418B /* HFScrolleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 87FBB5661D8289430043418B /* HFScrolleViewController.m */; };
 		87FBB56A1D829B9F0043418B /* HFScrollLayoutAgainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 87FBB5691D829B9F0043418B /* HFScrollLayoutAgainViewController.m */; };
 		87FBB56D1D82ABCB0043418B /* HFScrollExpandViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 87FBB56C1D82ABCB0043418B /* HFScrollExpandViewController.m */; };
+		87FBB5701D87D4B10043418B /* HFTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 87FBB56F1D87D4B10043418B /* HFTableViewController.m */; };
+		87FBB5771D87F6BF0043418B /* HFTestModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 87FBB5761D87F6BF0043418B /* HFTestModel.m */; };
+		87FBB57C1D87F7780043418B /* HFTestTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 87FBB57B1D87F7780043418B /* HFTestTableViewCell.m */; };
 		97041914403967A0601308EB /* libPods-Masonry所有API学习Tests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 57916EFAE25A9F01A288CD82 /* libPods-Masonry所有API学习Tests.a */; };
 		B88836FA2A5A0AB5D5BB0009 /* libPods-Masonry所有API学习.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 152ACC29FD3A3BF30AC18174 /* libPods-Masonry所有API学习.a */; };
 		CDE4C775EF0AEBF227F5F195 /* libPods-Masonry所有API学习UITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A51B4DA17781973F89C3342B /* libPods-Masonry所有API学习UITests.a */; };
@@ -95,6 +98,12 @@
 		87FBB5691D829B9F0043418B /* HFScrollLayoutAgainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HFScrollLayoutAgainViewController.m; sourceTree = "<group>"; };
 		87FBB56B1D82ABCB0043418B /* HFScrollExpandViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HFScrollExpandViewController.h; sourceTree = "<group>"; };
 		87FBB56C1D82ABCB0043418B /* HFScrollExpandViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HFScrollExpandViewController.m; sourceTree = "<group>"; };
+		87FBB56E1D87D4B10043418B /* HFTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HFTableViewController.h; sourceTree = "<group>"; };
+		87FBB56F1D87D4B10043418B /* HFTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HFTableViewController.m; sourceTree = "<group>"; };
+		87FBB5751D87F6BF0043418B /* HFTestModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HFTestModel.h; sourceTree = "<group>"; };
+		87FBB5761D87F6BF0043418B /* HFTestModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HFTestModel.m; sourceTree = "<group>"; };
+		87FBB57A1D87F7780043418B /* HFTestTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HFTestTableViewCell.h; sourceTree = "<group>"; };
+		87FBB57B1D87F7780043418B /* HFTestTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HFTestTableViewCell.m; sourceTree = "<group>"; };
 		A51B4DA17781973F89C3342B /* libPods-Masonry所有API学习UITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Masonry所有API学习UITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E85CAD9832240AFD77DDE394 /* Pods-Masonry所有API学习UITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Masonry所有API学习UITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Masonry所有API学习UITests/Pods-Masonry所有API学习UITests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -235,6 +244,34 @@
 		87FBB54F1D8133E20043418B /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				87FBB5791D87F7380043418B /* Controller */,
+				87FBB5781D87F7110043418B /* View */,
+				87FBB5711D87F60E0043418B /* Model */,
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
+		87FBB5711D87F60E0043418B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				87FBB5751D87F6BF0043418B /* HFTestModel.h */,
+				87FBB5761D87F6BF0043418B /* HFTestModel.m */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		87FBB5781D87F7110043418B /* View */ = {
+			isa = PBXGroup;
+			children = (
+				87FBB57A1D87F7780043418B /* HFTestTableViewCell.h */,
+				87FBB57B1D87F7780043418B /* HFTestTableViewCell.m */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		87FBB5791D87F7380043418B /* Controller */ = {
+			isa = PBXGroup;
+			children = (
 				87FBB5501D8134350043418B /* HFBasciViewController.h */,
 				87FBB5511D8134350043418B /* HFBasciViewController.m */,
 				87FBB5531D8148250043418B /* HFUpdataViewController.h */,
@@ -255,8 +292,10 @@
 				87FBB5691D829B9F0043418B /* HFScrollLayoutAgainViewController.m */,
 				87FBB56B1D82ABCB0043418B /* HFScrollExpandViewController.h */,
 				87FBB56C1D82ABCB0043418B /* HFScrollExpandViewController.m */,
+				87FBB56E1D87D4B10043418B /* HFTableViewController.h */,
+				87FBB56F1D87D4B10043418B /* HFTableViewController.m */,
 			);
-			name = Classes;
+			name = Controller;
 			sourceTree = "<group>";
 		};
 		8894F788B9B7AE4446BBFF1C /* Frameworks */ = {
@@ -536,8 +575,11 @@
 				87FBB55B1D815E530043418B /* HFRemarkViewController.m in Sources */,
 				87FBB5551D8148250043418B /* HFUpdataViewController.m in Sources */,
 				87FBB55E1D81A6C30043418B /* HFbasicAndUpdataViewController.m in Sources */,
+				87FBB57C1D87F7780043418B /* HFTestTableViewCell.m in Sources */,
 				87FBB5671D8289430043418B /* HFScrolleViewController.m in Sources */,
 				87FBB5641D8280500043418B /* HFMultipliedByViewController.m in Sources */,
+				87FBB5771D87F6BF0043418B /* HFTestModel.m in Sources */,
+				87FBB5701D87D4B10043418B /* HFTableViewController.m in Sources */,
 				87FBB5521D8134350043418B /* HFBasciViewController.m in Sources */,
 				87FBB5611D824DAF0043418B /* HFOverlapViewController.m in Sources */,
 				87FBB5471D812CF10043418B /* BaseViewController.m in Sources */,

@@ -17,6 +17,7 @@
 #import "HFScrolleViewController.h"
 #import "HFScrollLayoutAgainViewController.h"
 #import "HFScrollExpandViewController.h"
+#import "HFTableViewController.h"
 
 @interface ViewController ()<UITableViewDataSource,UITableViewDelegate>
 
@@ -43,7 +44,7 @@
                            [[HFScrolleViewController alloc] initWithTitle:@"ScrollView布局"],
                            [[HFScrollLayoutAgainViewController alloc] initWithTitle:@"ScrollView布局再尝试"],
                            [[HFScrollExpandViewController alloc] initWithTitle:@"labde的展开，类似cell展开的效果"],
-//                           [[TableViewController alloc] initWithTitle:@"tableview布局"],
+                           [[HFTableViewController alloc] initWithTitle:@"tableview布局"],
 //                           [[HeaderFooterViewController alloc] initWithTitle:@"header/footer layout"],
                            ];
     

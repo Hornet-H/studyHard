@@ -67,58 +67,54 @@
     UIView *tapView = tap.view;
     NSUInteger index = 0;
     for (NSMutableArray *array in self.expandStates) {
-        UILabel *view = [array firstObject];
-        
+        /** 去取数组中存的label对象*/
+        UILabel *view= [array firstObject];
         if (view == tapView) {
             NSNumber *state = [array lastObject];
-            // 当前是展开状态的话，就收缩
+            /** 如果当前是展示开状态就收缩*/
             if ([state boolValue] == YES) {
                 [view mas_updateConstraints:^(MASConstraintMaker *make) {
-                    make.height.mas_equalTo(40);
+                    make.height.equalTo(40);
                 }];
-            } else {
+            }else{
                 UIView *preView = nil;
                 UIView *nextView = nil;
-                
                 if (index - 1 < self.expandStates.count && index >= 1) {
                     preView = [[self.expandStates objectAtIndex:index - 1] firstObject];
                 }
-                
                 if (index + 1 < self.expandStates.count) {
                     nextView = [[self.expandStates objectAtIndex:index + 1] firstObject];
                 }
-                
                 [view mas_remakeConstraints:^(MASConstraintMaker *make) {
-                    if (preView) {
-                        make.top.mas_equalTo(preView.mas_bottom).offset(20);
-                    } else {
-                        make.top.mas_equalTo(20);
-                    }
                     
-                    make.left.mas_equalTo(15);
-                    make.right.mas_equalTo(self.view).offset(-15);
+                    if (preView) {
+                        make.top.equalTo(preView.mas_bottom).offset(20);
+                    }else{
+                        make.top.equalTo(20);
+                    }
+                    make.left.equalTo(15);
+                    make.right.equalTo(self.view).offset(-15);
+                    
                 }];
-                
                 if (nextView) {
                     [nextView mas_updateConstraints:^(MASConstraintMaker *make) {
-                        make.top.mas_equalTo(view.mas_bottom).offset(20);
+                        make.top.equalTo(view.mas_bottom).offset(15);
                     }];
                 }
             }
-            
-            [array replaceObjectAtIndex:1 withObject:@(!state.boolValue)];
-            
+            [array replaceObjectAtIndex:1 withObject:@(!state.boolValue )];
+            /** 重置完约束之后需要进行下面这几步来更新约束*/
             [self.view setNeedsUpdateConstraints];
             [self.view updateConstraintsIfNeeded];
-            
-            [UIView animateWithDuration:0.35 animations:^{
+            /** 设置动画效果*/
+            [UIView animateWithDuration:0.3 delay:0 options:0 animations:^{
                 [self.view layoutIfNeeded];
             } completion:^(BOOL finished) {
-                
+            
             }];
             break;
         }
-        index++;
+        index ++;
     }
 }
 - (NSMutableArray *)expandStates {
