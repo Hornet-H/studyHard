@@ -34,6 +34,7 @@
         label.layer.borderWidth = 2.0;
         label.preferredMaxLayoutWidth = kScreenWidth - 30;
         label.textAlignment = NSTextAlignmentLeft;
+        label.userInteractionEnabled = YES;
         UITapGestureRecognizer *tapRecognizer = [[UITapGestureRecognizer alloc]initWithTarget:self action:@selector(tapAction:)];
         [label addGestureRecognizer:tapRecognizer];
         [self.scrollView addSubview:label];
