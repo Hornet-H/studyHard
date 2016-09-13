@@ -13,6 +13,10 @@
 #import "HFRemarkViewController.h"
 #import "HFbasicAndUpdataViewController.h"
 #import "HFOverlapViewController.h"
+#import "HFMultipliedByViewController.h"
+#import "HFScrolleViewController.h"
+#import "HFScrollLayoutAgainViewController.h"
+#import "HFScrollExpandViewController.h"
 
 @interface ViewController ()<UITableViewDataSource,UITableViewDelegate>
 
@@ -35,10 +39,10 @@
                            [[HFRemarkViewController alloc] initWithTitle:@"动画重新添加约束"],
                            [[HFbasicAndUpdataViewController alloc] initWithTitle:@"整体动画更新约束"],
                            [[HFOverlapViewController alloc] initWithTitle:@"复合view循环约束"],
-//                           [[AspectFitController alloc] initWithTitle:@"约束百分比"],
-//                           [[BasicAnimatedController alloc] initWithTitle:@"基本动画"],
-//                           [[ScrollViewController alloc] initWithTitle:@"ScrollView布局"],
-//                           [[ScrollViewComplexController alloc] initWithTitle:@"复杂ScrollView"],
+                           [[HFMultipliedByViewController alloc] initWithTitle:@"约束百分比"],
+                           [[HFScrolleViewController alloc] initWithTitle:@"ScrollView布局"],
+                           [[HFScrollLayoutAgainViewController alloc] initWithTitle:@"ScrollView布局再尝试"],
+                           [[HFScrollExpandViewController alloc] initWithTitle:@"labde的展开，类似cell展开的效果"],
 //                           [[TableViewController alloc] initWithTitle:@"tableview布局"],
 //                           [[HeaderFooterViewController alloc] initWithTitle:@"header/footer layout"],
                            ];

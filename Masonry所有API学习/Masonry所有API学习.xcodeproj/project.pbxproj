@@ -23,6 +23,9 @@
 		87FBB55E1D81A6C30043418B /* HFbasicAndUpdataViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 87FBB55D1D81A6C30043418B /* HFbasicAndUpdataViewController.m */; };
 		87FBB5611D824DAF0043418B /* HFOverlapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 87FBB5601D824DAF0043418B /* HFOverlapViewController.m */; };
 		87FBB5641D8280500043418B /* HFMultipliedByViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 87FBB5631D8280500043418B /* HFMultipliedByViewController.m */; };
+		87FBB5671D8289430043418B /* HFScrolleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 87FBB5661D8289430043418B /* HFScrolleViewController.m */; };
+		87FBB56A1D829B9F0043418B /* HFScrollLayoutAgainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 87FBB5691D829B9F0043418B /* HFScrollLayoutAgainViewController.m */; };
+		87FBB56D1D82ABCB0043418B /* HFScrollExpandViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 87FBB56C1D82ABCB0043418B /* HFScrollExpandViewController.m */; };
 		97041914403967A0601308EB /* libPods-Masonry所有API学习Tests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 57916EFAE25A9F01A288CD82 /* libPods-Masonry所有API学习Tests.a */; };
 		B88836FA2A5A0AB5D5BB0009 /* libPods-Masonry所有API学习.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 152ACC29FD3A3BF30AC18174 /* libPods-Masonry所有API学习.a */; };
 		CDE4C775EF0AEBF227F5F195 /* libPods-Masonry所有API学习UITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A51B4DA17781973F89C3342B /* libPods-Masonry所有API学习UITests.a */; };
@@ -86,6 +89,12 @@
 		87FBB5601D824DAF0043418B /* HFOverlapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HFOverlapViewController.m; sourceTree = "<group>"; };
 		87FBB5621D8280500043418B /* HFMultipliedByViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HFMultipliedByViewController.h; sourceTree = "<group>"; };
 		87FBB5631D8280500043418B /* HFMultipliedByViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HFMultipliedByViewController.m; sourceTree = "<group>"; };
+		87FBB5651D8289430043418B /* HFScrolleViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HFScrolleViewController.h; sourceTree = "<group>"; };
+		87FBB5661D8289430043418B /* HFScrolleViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HFScrolleViewController.m; sourceTree = "<group>"; };
+		87FBB5681D829B9F0043418B /* HFScrollLayoutAgainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HFScrollLayoutAgainViewController.h; sourceTree = "<group>"; };
+		87FBB5691D829B9F0043418B /* HFScrollLayoutAgainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HFScrollLayoutAgainViewController.m; sourceTree = "<group>"; };
+		87FBB56B1D82ABCB0043418B /* HFScrollExpandViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HFScrollExpandViewController.h; sourceTree = "<group>"; };
+		87FBB56C1D82ABCB0043418B /* HFScrollExpandViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HFScrollExpandViewController.m; sourceTree = "<group>"; };
 		A51B4DA17781973F89C3342B /* libPods-Masonry所有API学习UITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Masonry所有API学习UITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E85CAD9832240AFD77DDE394 /* Pods-Masonry所有API学习UITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Masonry所有API学习UITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Masonry所有API学习UITests/Pods-Masonry所有API学习UITests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -240,6 +249,12 @@
 				87FBB5601D824DAF0043418B /* HFOverlapViewController.m */,
 				87FBB5621D8280500043418B /* HFMultipliedByViewController.h */,
 				87FBB5631D8280500043418B /* HFMultipliedByViewController.m */,
+				87FBB5651D8289430043418B /* HFScrolleViewController.h */,
+				87FBB5661D8289430043418B /* HFScrolleViewController.m */,
+				87FBB5681D829B9F0043418B /* HFScrollLayoutAgainViewController.h */,
+				87FBB5691D829B9F0043418B /* HFScrollLayoutAgainViewController.m */,
+				87FBB56B1D82ABCB0043418B /* HFScrollExpandViewController.h */,
+				87FBB56C1D82ABCB0043418B /* HFScrollExpandViewController.m */,
 			);
 			name = Classes;
 			sourceTree = "<group>";
@@ -521,12 +536,15 @@
 				87FBB55B1D815E530043418B /* HFRemarkViewController.m in Sources */,
 				87FBB5551D8148250043418B /* HFUpdataViewController.m in Sources */,
 				87FBB55E1D81A6C30043418B /* HFbasicAndUpdataViewController.m in Sources */,
+				87FBB5671D8289430043418B /* HFScrolleViewController.m in Sources */,
 				87FBB5641D8280500043418B /* HFMultipliedByViewController.m in Sources */,
 				87FBB5521D8134350043418B /* HFBasciViewController.m in Sources */,
 				87FBB5611D824DAF0043418B /* HFOverlapViewController.m in Sources */,
 				87FBB5471D812CF10043418B /* BaseViewController.m in Sources */,
+				87FBB56A1D829B9F0043418B /* HFScrollLayoutAgainViewController.m in Sources */,
 				87FBB5171D810C9C0043418B /* AppDelegate.m in Sources */,
 				87FBB5141D810C9C0043418B /* main.m in Sources */,
+				87FBB56D1D82ABCB0043418B /* HFScrollExpandViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -670,6 +688,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				GCC_PREFIX_HEADER = "Masonry所有API学习/TargetPractice.pch";
 				INFOPLIST_FILE = "Masonry所有API学习/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.dahuangfeng.Masonry--API--";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -683,6 +702,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				GCC_PREFIX_HEADER = "Masonry所有API学习/TargetPractice.pch";
 				INFOPLIST_FILE = "Masonry所有API学习/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.dahuangfeng.Masonry--API--";
 				PRODUCT_NAME = "$(TARGET_NAME)";
