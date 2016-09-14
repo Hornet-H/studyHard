@@ -84,7 +84,7 @@
     self.model = model;
     self.titleLabel.text = model.title;
     self.descLabel.text = model.desc;
-    /** 根据当前的cell是展开还是没有展开来进行约束的重置*/
+    /** 根据当前的cell是展开还是没有展开来进行约束的重置----这种思想比较好相当于剥离的逻辑，和常用的订单状态判断相类似*/
     if (model.isExpanded) {
         [self.descLabel mas_remakeConstraints:^(MASConstraintMaker *make) {
             make.left.mas_equalTo(self.titleLabel);

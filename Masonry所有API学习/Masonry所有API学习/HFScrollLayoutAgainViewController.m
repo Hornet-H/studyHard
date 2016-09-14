@@ -27,13 +27,15 @@
 
     [self.view addSubview:self.scrolleView];
     [self.scrolleView addSubview:self.contentView];
+    
     [self.scrolleView mas_makeConstraints:^(MASConstraintMaker *make) {
         make.edges.equalTo(self.view);
     }];
+    /** 注意下面宽高必须设置   第二种方法是:相对于同一个父控件进行布局设置，也是没有问题的*/
     [self.contentView mas_makeConstraints:^(MASConstraintMaker *make) {
         make.edges.equalTo(self.scrolleView);
+        make.size.equalTo(CGSizeMake(kScreenWidth, kScreenHeight));
     }];
-//
 
 }
 
